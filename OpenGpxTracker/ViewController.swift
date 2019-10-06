@@ -389,7 +389,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate  {
         let appTitleX: CGFloat = 0 //self.view.frame.width/2 - appTitleW/2
         let appTitleY: CGFloat = isIPhoneX ? 40.0 : 20.0
         appTitleLabel.frame = CGRect(x:appTitleX, y: appTitleY, width: appTitleW, height: appTitleH)
-        appTitleLabel.text = "  Open GPX Tracker"
+        appTitleLabel.text = "     RNH Tracker (YSY)  "
         appTitleLabel.textAlignment = .left
         appTitleLabel.font = UIFont.boldSystemFont(ofSize: 10)
         //appTitleLabel.textColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
