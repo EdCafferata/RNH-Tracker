@@ -99,7 +99,7 @@ class GPXMapView: MKMapView {
                 self.removeOverlay(self.tileServerOverlay)
             }
             //add new overlay to map
-            if newValue != .openStreetMap {
+            if newValue != .openSeaMap {
                 self.tileServerOverlay = CachedTileOverlay(urlTemplate: newValue.templateUrl)
                 (self.tileServerOverlay as! CachedTileOverlay).useCache = self.useCache
                 tileServerOverlay.canReplaceMapContent = true
