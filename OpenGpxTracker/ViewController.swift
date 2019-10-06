@@ -467,7 +467,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate  {
         map.addSubview(preferencesButton)
         
         // Share button
-        shareButton.frame = CGRect(x: 5 + 10 + 48 * 2, y: 14 + 5 + 8  + iPhoneXdiff, width: 32, height: 32)
+        shareButton.frame = CGRect(x: 5 + 8, y: 48 + 5 + 48 + 5 + iPhoneXdiff, width: 32, height: 32)
         shareButton.setImage(UIImage(named: "share"), for: UIControl.State())
         shareButton.setImage(UIImage(named: "share_high"), for: .highlighted)
         shareButton.addTarget(self, action: #selector(ViewController.openShare), for: .touchUpInside)
