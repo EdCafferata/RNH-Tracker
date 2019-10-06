@@ -515,6 +515,7 @@
 					};
 					898EECEC19C49B5800B4B207 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 9J2S23WJH3;
 						LastSwiftMigration = 1100;
 						TestTargetID = 898EECD419C49B5800B4B207;
 					};
@@ -915,7 +916,7 @@
 				INFOPLIST_FILE = OpenGpxTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.rnhapp;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.rondeomnoordholland.rnhapp;
 				PRODUCT_NAME = "RNH Tracker";
 				SWIFT_OBJC_BRIDGING_HEADER = OpenGpxTracker/ObjectiveCBridgingHeader.h;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -936,7 +937,7 @@
 				INFOPLIST_FILE = OpenGpxTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.rnhapp;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.rondeomnoordholland.rnhapp;
 				PRODUCT_NAME = "RNH Tracker";
 				SWIFT_OBJC_BRIDGING_HEADER = OpenGpxTracker/ObjectiveCBridgingHeader.h;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -949,7 +950,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 9J2S23WJH3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -972,7 +974,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 9J2S23WJH3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1007,7 +1010,7 @@
 				INFOPLIST_FILE = "OpenGpxTracker-Watch/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.rnhapp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.rondeomnoordholland.rnhapp.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1038,7 +1041,7 @@
 				IBSC_MODULE = OpenGpxTracker_Watch_Extension;
 				INFOPLIST_FILE = "OpenGpxTracker-Watch/Info.plist";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.rnhapp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.rondeomnoordholland.rnhapp.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1068,7 +1071,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.rnhapp.watchkitapp.extension;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.rondeomnoordholland.rnhapp.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1099,7 +1102,7 @@
 				INFOPLIST_FILE = "OpenGpxTracker-Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.rnhapp.watchkitapp.extension;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.rondeomnoordholland.rnhapp.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
