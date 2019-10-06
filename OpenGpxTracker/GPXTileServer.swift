@@ -23,7 +23,9 @@ enum GPXTileServer: Int {
     
     /// Open Street Map tile server
     case openStreetMap
-    //case AnotherMap
+    
+    /// Open Sea Map tile server
+    case openSeaMap
     
     /// CartoDB tile server
     case cartoDB
@@ -33,6 +35,7 @@ enum GPXTileServer: Int {
         switch self {
         case .apple: return "Apple Mapkit (no offline cache)"
         case .openStreetMap: return "Open Street Map"
+        case .openSeaMap: return "Open Sea Map"
         case .cartoDB: return "Carto DB"
         //case .AnotherMap: return "My Map"
         }
@@ -42,9 +45,10 @@ enum GPXTileServer: Int {
         switch self {
         case .apple: return ""
         case .openStreetMap: return "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        case .openSeaMap: return "https://t1.tile.openseamap.org/{z}/{x}/{y}.png"
         case .cartoDB: return "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
             
-        //case .AnotherMap: return "http://another.map.tile.server/{z}/{x}/{y}.png"
+        //case .AnotherMap: return "https://another.map.tile.server/{z}/{x}/{y}.png"
         }
     }
     // Number of tile servers defined
