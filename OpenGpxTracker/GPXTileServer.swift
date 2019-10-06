@@ -45,7 +45,7 @@ enum GPXTileServer: Int {
         switch self {
         case .apple: return ""
         case .openStreetMap: return "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        case .openSeaMap: return "https://t1.tile.openseamap.org/{z}/{x}/{y}.png"
+        case .openSeaMap: return "https://{s}.tile.openseamap.org/{z}/{x}/{y}.png"
         case .cartoDB: return "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
             
         //case .AnotherMap: return "https://another.map.tile.server/{z}/{x}/{y}.png"

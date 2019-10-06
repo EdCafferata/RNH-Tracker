@@ -457,11 +457,11 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate  {
         map.addSubview(aboutButton)
         
         // Preferences button
-        preferencesButton.frame = CGRect(x: 5 + 10 + 48, y: 14 + 5 + 8  + iPhoneXdiff, width: 32, height: 32)
-        preferencesButton.setImage(UIImage(named: "prefs"), for: UIControl.State())
-        preferencesButton.setImage(UIImage(named: "prefs_high"), for: .highlighted)
-        preferencesButton.addTarget(self, action: #selector(ViewController.openPreferencesTableViewController), for: .touchUpInside)
-        preferencesButton.autoresizingMask = [.flexibleRightMargin]
+        //preferencesButton.frame = CGRect(x: 5 + 10 + 48, y: 14 + 5 + 8  + iPhoneXdiff, width: 32, height: 32)
+        //preferencesButton.setImage(UIImage(named: "prefs"), for: UIControl.State())
+        //preferencesButton.setImage(UIImage(named: "prefs_high"), for: .highlighted)
+        //preferencesButton.addTarget(self, action: #selector(ViewController.openPreferencesTableViewController), for: .touchUpInside)
+        //preferencesButton.autoresizingMask = [.flexibleRightMargin]
         //aboutButton.backgroundColor = kWhiteBackgroundColor
         //aboutButton.layer.cornerRadius = 24
         map.addSubview(preferencesButton)
@@ -542,41 +542,41 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate  {
         map.addSubview(trackerButton)
         
         // Pin Button (on the left of start)
-        let newPinW: CGFloat = kButtonSmallSize
-        let newPinH: CGFloat = kButtonSmallSize
-        let newPinX: CGFloat = trackerX - trackerW/2 - kButtonSeparation - newPinW/2
-        let newPinY: CGFloat = yCenterForButtons
-        newPinButton.frame = CGRect(x: 0, y: 0, width: newPinW, height: newPinH)
-        newPinButton.center = CGPoint(x: newPinX, y: newPinY)
-        newPinButton.layer.cornerRadius = newPinW/2
-        newPinButton.backgroundColor = kWhiteBackgroundColor
-        newPinButton.setImage(UIImage(named: "addPin"), for: UIControl.State())
-        newPinButton.setImage(UIImage(named: "addPinHigh"), for: .highlighted)
-        newPinButton.addTarget(self, action: #selector(ViewController.addPinAtMyLocation), for: .touchUpInside)
-        newPinButton.autoresizingMask = [.flexibleLeftMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleRightMargin]
+        //let newPinW: CGFloat = kButtonSmallSize
+        //let newPinH: CGFloat = kButtonSmallSize
+        //let newPinX: CGFloat = trackerX - trackerW/2 - kButtonSeparation - newPinW/2
+        //let newPinY: CGFloat = yCenterForButtons
+        //newPinButton.frame = CGRect(x: 0, y: 0, width: newPinW, height: newPinH)
+        //newPinButton.center = CGPoint(x: newPinX, y: newPinY)
+        //newPinButton.layer.cornerRadius = newPinW/2
+        //newPinButton.backgroundColor = kWhiteBackgroundColor
+        //newPinButton.setImage(UIImage(named: "addPin"), for: UIControl.State())
+        //newPinButton.setImage(UIImage(named: "addPinHigh"), for: .highlighted)
+        //newPinButton.addTarget(self, action: #selector(ViewController.addPinAtMyLocation), for: .touchUpInside)
+        //newPinButton.autoresizingMask = [.flexibleLeftMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleRightMargin]
         //let newPinLongPress = UILongPressGestureRecognizer(target: self, action: Selector("newPinLongPress:"))
         //newPinButton.addGestureRecognizer(newPinLongPress)
-        map.addSubview(newPinButton)
+        //map.addSubview(newPinButton)
         
         // Follow user button
-        let followW: CGFloat = kButtonSmallSize
-        let followH: CGFloat = kButtonSmallSize
-        let followX: CGFloat = newPinX - newPinW/2 - kButtonSeparation - followW/2
-        let followY: CGFloat = yCenterForButtons
-        followUserButton.frame = CGRect(x: 0, y: 0, width: followW, height: followH)
-        followUserButton.center = CGPoint(x: followX, y: followY)
-        followUserButton.layer.cornerRadius = followW/2
-        followUserButton.backgroundColor = kWhiteBackgroundColor
+        //let followW: CGFloat = kButtonSmallSize
+        //let followH: CGFloat = kButtonSmallSize
+        //let followX: CGFloat = newPinX - newPinW/2 - kButtonSeparation - followW/2
+        //let followY: CGFloat = yCenterForButtons
+        //followUserButton.frame = CGRect(x: 0, y: 0, width: followW, height: followH)
+        //followUserButton.center = CGPoint(x: followX, y: followY)
+        //followUserButton.layer.cornerRadius = followW/2
+        //followUserButton.backgroundColor = kWhiteBackgroundColor
         //follow_user_high represents the user is being followed. Default status when app starts
-        followUserButton.setImage(UIImage(named: "follow_user_high"), for: UIControl.State())
-        followUserButton.setImage(UIImage(named: "follow_user_high"), for: .highlighted)
-        followUserButton.addTarget(self, action: #selector(ViewController.followButtonTroggler), for: .touchUpInside)
-        followUserButton.autoresizingMask = [.flexibleLeftMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleRightMargin]
-        map.addSubview(followUserButton)
+        //followUserButton.setImage(UIImage(named: "follow_user_high"), for: UIControl.State())
+        //followUserButton.setImage(UIImage(named: "follow_user_high"), for: .highlighted)
+        //followUserButton.addTarget(self, action: #selector(ViewController.followButtonTroggler), for: .touchUpInside)
+        //followUserButton.autoresizingMask = [.flexibleLeftMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleRightMargin]
+        //map.addSubview(followUserButton)
         
         // Save button
-        let saveW: CGFloat = kButtonSmallSize
-        let saveH: CGFloat = kButtonSmallSize
+        let saveW: CGFloat = kButtonLargeSize
+        let saveH: CGFloat = kButtonLargeSize
         let saveX: CGFloat = trackerX + trackerW/2 + kButtonSeparation + saveW/2
         let saveY: CGFloat = yCenterForButtons
         saveButton.frame = CGRect(x: 0, y: 0, width: saveW, height: saveH)
@@ -591,9 +591,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate  {
         map.addSubview(saveButton)
         
         // Reset button
-        let resetW: CGFloat = kButtonSmallSize
-        let resetH: CGFloat = kButtonSmallSize
-        let resetX: CGFloat = saveX + saveW/2 + kButtonSeparation + resetW/2
+        let resetW: CGFloat = kButtonLargeSize
+        let resetH: CGFloat = kButtonLargeSize
+        let resetX: CGFloat = trackerX - trackerW/2 - kButtonSeparation - resetW/2
         let resetY: CGFloat = yCenterForButtons
         resetButton.frame = CGRect(x: 0, y: 0, width: resetW, height: resetH)
         resetButton.center = CGPoint(x: resetX, y: resetY)

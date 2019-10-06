@@ -86,7 +86,7 @@ class GPXMapView: MKMapView {
     
     /// Selected tile server.
     /// - SeeAlso: GPXTileServer
-    var tileServer: GPXTileServer = .openStreetMap {
+    var tileServer: GPXTileServer = .apple {
         willSet {
             // Info about how to use other tile servers:
             //http://www.glimsoft.com/01/31/how-to-use-openstreetmap-on-ios-7-in-7-lines-of-code/2
@@ -99,7 +99,7 @@ class GPXMapView: MKMapView {
                 self.removeOverlay(self.tileServerOverlay)
             }
             //add new overlay to map
-            if newValue != .openSeaMap {
+            if newValue != .apple {
                 self.tileServerOverlay = CachedTileOverlay(urlTemplate: newValue.templateUrl)
                 (self.tileServerOverlay as! CachedTileOverlay).useCache = self.useCache
                 tileServerOverlay.canReplaceMapContent = true
