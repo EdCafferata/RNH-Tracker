@@ -575,8 +575,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate  {
         //map.addSubview(followUserButton)
         
         // Save button
-        let saveW: CGFloat = kButtonLargeSize
-        let saveH: CGFloat = kButtonLargeSize
+        let saveW: CGFloat = kButtonSmallSize
+        let saveH: CGFloat = kButtonSmallSize
         let saveX: CGFloat = trackerX + trackerW/2 + kButtonSeparation + saveW/2
         let saveY: CGFloat = yCenterForButtons
         saveButton.frame = CGRect(x: 0, y: 0, width: saveW, height: saveH)
@@ -591,8 +591,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate  {
         map.addSubview(saveButton)
         
         // Reset button
-        let resetW: CGFloat = kButtonLargeSize
-        let resetH: CGFloat = kButtonLargeSize
+        let resetW: CGFloat = kButtonSmallSize
+        let resetH: CGFloat = kButtonSmallSize
         let resetX: CGFloat = trackerX - trackerW/2 - kButtonSeparation - resetW/2
         let resetY: CGFloat = yCenterForButtons
         resetButton.frame = CGRect(x: 0, y: 0, width: resetW, height: resetH)
