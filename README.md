@@ -1,7 +1,7 @@
 RNH Tracker for iOS + WatchOS
 ===============================================
 
-[![Available on the app store]
+[![Available on the app store] <https://apps.apple.com/nl/app/rnh-tracker-ysy/id1191110831>
 
 RNH Tracker is a GPS logger for iOS (iPhone, iPad, iPod) with offline map cache support. Track your location, add waypoints and send your logs by email as GPX files.
 
